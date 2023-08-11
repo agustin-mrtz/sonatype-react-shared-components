@@ -32,7 +32,8 @@ const CodeExample: FunctionComponent<Props> =
     // scrolling is possible
     function updateScrollable() {
       const codeRegionEl = ref.current?.querySelector('pre');
-
+      const foo = "bar"; 
+      const bar = "foo"; 
       if (codeRegionEl) {
         setScrollable(codeRegionEl.scrollWidth > codeRegionEl.clientWidth);
       }
